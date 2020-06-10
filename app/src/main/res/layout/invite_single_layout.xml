@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_invite_page"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/default_profile"
+        />
+
+    <TextView
+        android:id="@+id/tv_name_invite_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:layout_toRightOf="@+id/iv_invite_page"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_after_accepting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@+id/tv_name_invite_page"
+        android:text="  sent you invitation."
+        android:textColor="#000"
+        />
+
+    <Button
+        android:id="@+id/button_invite_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tv_name_invite_page"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/iv_invite_page"
+        android:background="@drawable/button_green"
+        android:padding="10dp"
+        android:text="Accept"
+        android:textColor="#fff"
+        android:textSize="12dp" />
+    <Button
+        android:id="@+id/button_invite_reject"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Reject"
+        android:textSize="12dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_name_invite_page"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_registration"
+        android:textColor="#fff"
+        android:layout_alignRight="@+id/button_invite_accept"
+        />
+    <TextView
+        android:id="@+id/tv_line_invite"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/button_invite_accept"
+        android:background="#D3D3D3"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+
+
+</RelativeLayout>

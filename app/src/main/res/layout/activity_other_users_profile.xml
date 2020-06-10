@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtherUsersProfile">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DFDED8"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_op_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_other_user_profile_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        >
+    <ImageView
+        android:id="@+id/iv_other_user_profile_picture"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:src="@mipmap/default_profile"
+        android:layout_margin="1dp"
+       android:layout_gravity="center"
+        />
+    </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/button_other_user_cancel_request"
+            android:layout_width="176dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/linear_op_image"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_registration"
+            android:text="decline request"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/button_other_user_request"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/linear_op_image"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/button_other_user_cancel_request"
+            android:layout_toRightOf="@+id/button_other_user_cancel_request"
+            android:background="@drawable/button_registration"
+            android:text="invite"
+            android:textColor="@color/colorWhite"
+            android:textSize="12dp"
+            tools:ignore="RtlCompat" />
+
+        <RelativeLayout
+            android:id="@+id/relative_other_profile_user_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_other_user_request"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/layout_design"
+            >
+            <TextView
+                android:id="@+id/tv_other_user_personal_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Basic info:"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_other_user_line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                android:layout_below="@+id/tv_other_user_personal_details"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_other_user_name"
+                android:layout_below="@+id/tv_other_user_line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_other_user_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="age"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/tv_other_user_name"
+                />
+            <TextView
+                android:id="@+id/tv_other_user_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="gender"
+                android:layout_below="@+id/tv_other_user_name"
+                android:layout_toRightOf="@+id/tv_other_user_age"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                />
+            <TextView
+                android:id="@+id/tv_other_user_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="height"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/tv_other_user_age"
+                android:layout_marginTop="3dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_other_user_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="dob"
+                android:layout_below="@+id/tv_other_user_height"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                />
+            <TextView
+                android:id="@+id/tv_other_user_martial_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="martial_status"
+                android:layout_below="@+id/tv_other_user_dob"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_other_user_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="lang"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/tv_other_user_martial_status"
+                />
+            <TextView
+                android:id="@+id/tv_other_user_religion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="religion"
+                android:layout_below="@+id/tv_other_user_martial_status"
+                android:layout_toRightOf="@+id/tv_other_user_language"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_other_user_user_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/relative_other_profile_user_details"
+            android:background="@drawable/layout_design"
+            >
+            <TextView
+                android:id="@+id/tv_other_user_area_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Residental and social info:"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_other_user_line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                android:layout_below="@+id/tv_other_user_area_details"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_other_user_state"
+                android:layout_below="@+id/tv_other_user_line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="state"
+                android:textSize="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_other_user_district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="district"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/tv_other_user_state"
+                />
+
+            <TextView
+                android:id="@+id/tv_other_user_local_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="local address"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/tv_other_user_district"
+                android:layout_marginTop="3dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_other_user_community"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="community"
+                android:layout_below="@+id/tv_other_user_local_address"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_other_user_residence_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="live_status"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/tv_other_user_community"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_other_user_user_education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_margin="5dp"
+            android:layout_below="@+id/relative_other_user_user_area"
+            android:background="@drawable/layout_design"
+            >
+            <TextView
+                android:id="@+id/tv_other_user_education_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Education and Qualifications:"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_other_user_line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                android:layout_below="@+id/tv_other_user_education_details"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_other_user_edu_level"
+                android:layout_below="@+id/tv_other_user_line3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="edu_level"
+                android:textSize="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_other_user_inst_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="inst_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/tv_other_user_edu_level"
+                />
+
+            <TextView
+                android:id="@+id/tv_other_user_edu_sector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="edu_sector"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/tv_other_user_inst_name"
+                android:layout_marginTop="3dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_other_user_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="job"
+                android:layout_below="@+id/tv_other_user_edu_sector"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_other_user_working_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_other_user_job"
+                android:layout_marginLeft="10dp"
+                android:hint="post"
+                android:layout_marginTop="3dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_other_user_org_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="org name"
+                android:layout_toRightOf="@+id/tv_other_user_working_post"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/tv_other_user_job"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_other_user_user_family"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/relative_other_user_user_education"
+            android:background="@drawable/layout_design"
+            >
+            <TextView
+                android:id="@+id/tv_other_user_family_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Family info:"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/tv_other_user_line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                android:layout_below="@+id/tv_other_user_family_details"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_other_user_total_family"
+                android:layout_below="@+id/tv_other_user_line4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="total_fam"
+                android:textSize="14dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_other_user_total_brothers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_other_user_total_family"
+                android:layout_marginLeft="10dp"
+                android:hint="brother"
+                android:layout_marginTop="3dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_other_user_total_sisters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="sister"
+                android:layout_toRightOf="@+id/tv_other_user_total_brothers"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/tv_other_user_total_family"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_other_user_father_occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="f_occupation"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/tv_other_user_total_brothers"
+                />
+
+            <TextView
+                android:id="@+id/tv_other_user_mother_occupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="m_occupation"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/tv_other_user_father_occupation"
+                android:layout_marginTop="3dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_other_user_fincome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="income"
+                android:layout_below="@+id/tv_other_user_mother_occupation"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

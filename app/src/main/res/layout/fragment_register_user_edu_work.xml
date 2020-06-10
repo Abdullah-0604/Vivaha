@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account.RegisterUserEduWork">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_vivahareg_logo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/vivaha_toolbar_logo_final"
+        />
+    <TextView
+        android:id="@+id/t_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/iv_vivahareg_logo2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorPrimary"
+        />
+    <TextView
+        android:id="@+id/tv_edulevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Education level"
+        android:layout_below="@+id/t_line"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        />
+    <Spinner
+        android:id="@+id/spinner_reguser_edulevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_edulevel"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+
+        >
+
+    </Spinner>
+        <EditText
+            android:id="@+id/et_reguser_institution_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_reguser_edulevel"
+            android:background="@drawable/edittextdesign"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Institution name"
+
+            />
+        <TextView
+            android:id="@+id/tv_education_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education sector"
+            android:layout_below="@+id/et_reguser_institution_name"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            />
+        <Spinner
+            android:id="@+id/spinner_reguser_edufield"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_education_field"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            >
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/tv_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job"
+            android:layout_below="@+id/spinner_reguser_edufield"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            />
+        <Spinner
+            android:id="@+id/spinner_reguser_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_job"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            >
+
+        </Spinner>
+        <EditText
+            android:id="@+id/et_organization_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_reguser_job"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/edittextdesign"
+            android:hint="Organization name"
+            />
+        <EditText
+            android:id="@+id/et_reguser_orgpost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_organization_name"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittextdesign"
+            android:hint="Working post"
+            />
+        <Button
+            android:id="@+id/button_reguser_edu_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_reguser_orgpost"
+            android:layout_margin="30dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_registration"
+            android:text="Next"
+            />
+    </RelativeLayout>
+
+</ScrollView>

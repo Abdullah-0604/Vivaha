@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Account.RegisterUserDetails">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView_vivah_reg_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/vivaha_toolbar_logo_final"
+        />
+        <TextView
+            android:id="@+id/t_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/imageView_vivah_reg_logo"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="20dp"
+            />
+
+    <EditText
+        android:id="@+id/et_reguserdetails_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_vivah_reg_logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittextdesign"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="18dp"
+        android:minLines="1"
+        android:maxLines="1"
+        />
+    <EditText
+        android:id="@+id/et_reguserdetails_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_reguserdetails_email"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittextdesign"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="18dp"
+        android:minLines="1"
+        android:maxLines="1"
+        />
+
+   <TextView
+       android:id="@+id/tv_reg_profilefor"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/et_reguserdetails_password"
+       android:text="Profile for:"
+       android:textSize="14dp"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="5dp"
+       />
+    <Spinner
+        android:id="@+id/spinner_reguser_profilefor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_reg_profilefor"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+    </Spinner>
+
+    <EditText
+        android:id="@+id/et_reguser_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Your First name"
+        android:layout_below="@+id/spinner_reguser_profilefor"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="18dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/edittextdesign"
+        android:layout_marginLeft="30dp"
+        />
+    <EditText
+        android:id="@+id/et_reguser_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:hint="Your Last name"
+        android:layout_below="@+id/spinner_reguser_profilefor"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittextdesign"
+
+
+        android:layout_toRightOf="@+id/et_reguser_firstname" />
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:layout_below="@+id/et_reguser_firstname"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+        <Spinner
+            android:id="@+id/spinner_reguser_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_gender"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+        <TextView
+            android:id="@+id/tv_reg_dateofbirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_reguser_gender"
+            android:layout_marginTop="20dp"
+            android:text="Date Of Birth"
+            android:textSize="14dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            />
+  <TextView
+      android:id="@+id/tv_date_format"
+      android:layout_marginTop="10dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="YYYY.MM.DD"
+      android:layout_below="@+id/tv_reg_dateofbirth"
+      android:layout_marginLeft="30dp"
+      android:textSize="18dp"
+      />
+
+        <Button
+            android:id="@+id/button_datepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_reguser_gender"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/tv_reg_dateofbirth"
+            android:text="pick a date"
+           style="@style/Widget.AppCompat.Button.Borderless"
+            android:textColor="@color/colorPrimary"
+
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/tv_religion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Religion"
+            android:textSize="14dp"
+            android:layout_below="@+id/tv_date_format"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+
+            />
+        <Spinner
+            android:id="@+id/spinner_reguser_religion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_religion"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Language"
+            android:textSize="14dp"
+            android:layout_below="@+id/spinner_reguser_religion"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+
+            />
+        <Spinner
+            android:id="@+id/spinner_reguser_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_language"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            />
+        <TextView
+            android:id="@+id/tv_reguser_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_reguser_language"
+            android:text="Height"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            />
+        <LinearLayout
+            android:id="@+id/linear_reguser_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tv_reguser_height"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="start"
+            >
+
+            <Spinner
+                android:id="@+id/spinner_reguser_height_feet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_feet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="feet"
+                android:layout_marginLeft="5dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_reguser_height_inch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_marginLeft="10dp"
+
+                />
+            <TextView
+                android:id="@+id/tv_inch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="inch"
+                android:layout_marginLeft="5dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:textSize="14dp"
+            android:layout_below="@+id/linear_reguser_height"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+
+            />
+        <Spinner
+            android:id="@+id/spinner_reguser_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_country"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            />
+        <Button
+            android:id="@+id/button_reguser_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:clickable="true"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_registration"
+            android:layout_below="@+id/spinner_reguser_country"
+
+
+            />
+
+            </RelativeLayout>
+
+</ScrollView>

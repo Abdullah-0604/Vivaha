@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account.RegisterUserFamily">
+<RelativeLayout
+    android:id="@+id/relative3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/iv_vivahareg_logo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/vivaha_toolbar_logo_final"
+        />
+
+    <TextView
+        android:id="@+id/t_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/iv_vivahareg_logo3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorPrimary" />
+    <EditText
+        android:id="@+id/et_reguser_familyno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_line"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="number"
+        android:background="@drawable/edittextdesign"
+        android:hint="Total family members"
+        />
+    <EditText
+        android:id="@+id/et_reguser_brotherno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_reguser_familyno"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="number"
+        android:background="@drawable/edittextdesign"
+        android:hint="No. of brothers"
+        />
+    <EditText
+        android:id="@+id/et_reguser_sisterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_reguser_brotherno"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:inputType="number"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittextdesign"
+        android:hint="No. of sisters"
+        />
+    <TextView
+        android:id="@+id/tv_father_occupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_reguser_sisterno"
+        android:text="Father's occupation"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+    <Spinner
+        android:id="@+id/spinner_reguser_father_occupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_father_occupation"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+    </Spinner>
+    <TextView
+        android:id="@+id/tv_mother_occupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mother's occupation"
+        android:layout_below="@+id/spinner_reguser_father_occupation"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+    <Spinner
+        android:id="@+id/spinner_reguser_mother_occupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_mother_occupation"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+
+        >
+    </Spinner>
+    <EditText
+        android:id="@+id/et_reguser_family_income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_reguser_mother_occupation"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/edittextdesign"
+        android:hint="Family income(NRS)"
+        android:inputType="number"
+        />
+    <Button
+        android:id="@+id/button_reguser_family"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_reguser_family_income"
+        android:layout_margin="30dp"
+        android:text="REGISTER"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/button_registration"
+        />
+
+</RelativeLayout>
+</ScrollView>

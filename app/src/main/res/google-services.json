@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "173102364332",
+    "firebase_url": "https://vivaha-a1983.firebaseio.com",
+    "project_id": "vivaha-a1983",
+    "storage_bucket": "vivaha-a1983.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173102364332:android:e43f705e3263150d",
+        "android_client_info": {
+          "package_name": "com.example.zorker.vivaha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173102364332-j4f9k362clpab1uooo65fhcha4acrvmv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zorker.vivaha",
+            "certificate_hash": "4ab46dabef098318af3605bffdbbfd924bdafd4b"
+          }
+        },
+        {
+          "client_id": "173102364332-usgbik83fne11ch8e4kvvbnk2i9m01qe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1TzTDw0vUJV04vC8tnBY7EAiTCrrBHm8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173102364332-usgbik83fne11ch8e4kvvbnk2i9m01qe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

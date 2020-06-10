@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom_nav_profile"
+        android:title="@string/account_menu"
+        android:icon="@drawable/ic_person_outline_black_24dp"
+        />
+    <item android:id="@+id/bottom_nav_matches"
+        android:title="@string/matches_menu"
+        android:icon="@drawable/ic_match_border_black_24dp"
+        />
+    <item android:id="@+id/bottom_nav_inbox"
+        android:title="@string/inbox_menu"
+        android:icon="@drawable/ic_inbox_outline_black_24dp"
+        />
+    <item android:id="@+id/bottom_nav_chat"
+        android:title="@string/chat_menu"
+        android:icon="@drawable/ic_chat_bubble_outline_black_24dp"
+        />
+
+
+
+</menu>

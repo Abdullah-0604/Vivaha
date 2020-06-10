@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <LinearLayout
+       android:id="@+id/linear_main"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:id="@+id/linear_image"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:padding="5dp"
+           >
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/iv_profile_Pic_search_list"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:src="@mipmap/default_profile"
+               />
+
+       </LinearLayout>
+       <LinearLayout
+           android:id="@+id/linear_details"
+           android:orientation="vertical"
+           android:layout_marginTop="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/tv_search_list_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="name"
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+               android:textSize="18dp"
+               />
+           <LinearLayout
+               android:id="@+id/linear_age"
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/tv_search_list_age"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="age"
+               android:layout_marginLeft="5dp"
+               android:layout_below="@+id/tv_rvsearch_name"
+               />
+           <TextView
+               android:id="@+id/tv_search_list_years"
+               android:text="years,"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               />
+               <TextView
+                   android:id="@+id/tv_search_list_gender"
+                   android:layout_width="wrap_content"
+                   android:hint="gender"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/linear_height"
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               >
+
+               <TextView
+                   android:id="@+id/tv_search_list_height_feet"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint=""
+                   android:layout_marginLeft="5dp"
+                   android:layout_below="@+id/tv_rvsearch_name"
+                   />
+               <TextView
+                   android:id="@+id/tv_search_list_feet"
+                   android:text="ft."
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="1dp"
+                   />
+               <TextView
+                   android:id="@+id/tv_search_list_height_inch"
+                   android:layout_width="wrap_content"
+                   android:hint=""
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:id="@+id/tv_search_list_inch"
+                   android:layout_width="wrap_content"
+                   android:text="inch"
+                   android:layout_marginLeft="1dp"
+                   android:layout_height="wrap_content" />
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/linear_religion"
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/tv_search_list_religion"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="5dp"
+                   android:layout_marginRight="2dp"
+                   android:hint="religion" />
+
+               <TextView
+                   android:id="@+id/tv_search_list_community"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="community"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/linear_language"
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+
+               >
+               <TextView
+                   android:id="@+id/tv_search_list_speaks"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Speaks"
+                   android:layout_marginLeft="5dp"
+                   />
+               <TextView
+                   android:id="@+id/tv_search_list_language"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="language"
+                   android:layout_marginLeft="5dp"
+                   />
+
+           </LinearLayout>
+           <Button
+               android:id="@+id/button_search_list_view_profile"
+               android:layout_width="wrap_content"
+               android:layout_height="25dp"
+               android:layout_gravity="right"
+               android:layout_marginRight="10dp"
+               android:background="@color/colorPrimary"
+               android:text="view profile"
+               android:padding="3dp"
+               android:textSize="10dp"
+               android:layout_marginBottom="5dp"
+               android:textColor="@color/colorWhite"
+               />
+
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+
+</RelativeLayout>

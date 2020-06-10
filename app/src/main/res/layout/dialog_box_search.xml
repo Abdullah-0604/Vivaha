@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_logo_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:src="@mipmap/vivaha_toolbar_logo_final"
+        />
+    <TextView
+        android:id="@+id/tv_line_below"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/iv_logo_search"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_iamlookingfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="fill_horizontal"
+        android:layout_below="@+id/iv_logo_search"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="10dp"
+
+
+        >
+
+        <TextView
+            android:id="@+id/tv_gender_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp" />
+        <Spinner
+            android:id="@+id/spinner_search_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            >
+
+        </Spinner>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_age_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_search_community"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="1dp"
+        android:gravity="fill_horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_search_aged"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Aged:"
+            android:layout_marginLeft="1dp"
+            />
+        <Spinner
+            android:id="@+id/spinner_search_agefrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="1dp"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/tv_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="14dp"
+            />
+        <Spinner
+            android:id="@+id/spinner_search_ageto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            >
+
+        </Spinner>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_height_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear_age_search"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="1dp"
+        android:gravity="fill_horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_search_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Height(min):"
+            android:layout_marginLeft="1dp"
+            />
+        <Spinner
+            android:id="@+id/spinner_search_height_feet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="1dp"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/tv_feet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ft."
+            android:textSize="14dp"
+            />
+        <Spinner
+            android:id="@+id/spinner_search_height_inch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            >
+
+        </Spinner>
+        <TextView
+            android:id="@+id/tv_inch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="in."
+            android:textSize="14dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_search_religion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="fill_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="1dp"
+        android:layout_below="@+id/linear_iamlookingfor"
+        >
+        <TextView
+            android:id="@+id/tv_search_religion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Religion:"
+            />
+        <Spinner
+            android:id="@+id/spinner_search_religion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+
+            >
+
+        </Spinner>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_search_community"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="1dp"
+        android:layout_below="@+id/linear_search_religion"
+        >
+        <TextView
+            android:id="@+id/tv_search_community"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:layout_marginLeft="1dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Community:"
+            />
+        <Spinner
+            android:id="@+id/spinner_search_community"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+
+            >
+
+        </Spinner>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_linee_rev"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/linear_height_search"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+</RelativeLayout>

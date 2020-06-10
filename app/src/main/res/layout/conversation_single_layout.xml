@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_conv_page"
+        android:layout_width="62dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:padding="3dp"
+        android:src="@mipmap/default_profile" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_conv_page_online"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@+id/iv_conv_page"
+       android:layout_alignRight="@+id/iv_conv_page"
+        android:layout_marginBottom="3dp"
+        android:visibility="invisible"
+        android:src="@drawable/icon_online_circle" />
+
+
+    <TextView
+        android:id="@+id/tv_conv_page_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:layout_toEndOf="@+id/iv_conv_page"
+        android:hint="DisplayNAme"
+        android:layout_toRightOf="@+id/iv_conv_page" />
+    <TextView
+        android:id="@+id/tv_conv_page_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_toEndOf="@+id/iv_conv_page"
+        android:hint="msg"
+        android:layout_toRightOf="@+id/iv_conv_page"
+        android:layout_below="@+id/tv_conv_page_name"
+        />
+
+
+
+</RelativeLayout>

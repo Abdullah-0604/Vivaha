@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    >
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rv_iv_profile_pic_friends_fragment"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:src="@mipmap/default_profile" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rv_iv_friends_fragment_online"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="347dp"
+        android:layout_marginLeft="347dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/icon_online_circle"
+        android:visibility="invisible" />
+
+   <LinearLayout
+       android:id="@+id/linear_friends_fragment"
+       android:orientation="vertical"
+       android:layout_width="wrap_content"
+       android:layout_toRightOf="@+id/rv_iv_profile_pic_friends_fragment"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="15dp"
+       >
+    <TextView
+        android:id="@+id/rv_tv_friends_fragment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="3dp"
+        android:hint="userName"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/rv_tv_friends_fragment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="date of friendship" />
+
+   </LinearLayout>
+    <TextView
+        android:id="@+id/line_friends_rv"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#D3D3D3"
+        android:layout_below="@+id/rv_iv_profile_pic_friends_fragment"
+        android:layout_marginTop="5dp"
+        />
+
+
+</RelativeLayout>
